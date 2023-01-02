@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --selected: #6feaf6;
+    --text-color: #777;
+    --white: #fff;
+    --dark-text: #1c2042;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family:  'Poppins', sans-serif;
+    background-color: var(--dark-text);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+.movie-container{
+    margin: 1.25rem 0;
+}
+
+#movie{
+    background-color: var(--white);
+    border: 0;
+    border-radius: 0.4rem;
+    margin-left: 0.8rem;
+    padding: 0.4rem 0.9rem;
+}
+
+.seat{
+    background-color: var(--text-color);
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.5rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.seat.selected{
+    background-color: greenyellow;
+}
+
+.seat.occupied{
+    background-color: red;
+}
+
+.showcase-container{
+    min-width: 15rem;
+    background-color: rgba(0, 0, 0, 0.1 );
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase-container li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.showcase-container li small{
+    margin-left: 4px;
+}
+
+.screen-container{
+    width: 20rem;
+    perspective: 1000px;
+    margin: 1.5rem 0;
+}
+
+.screen{
+    background-color: var(--white);
+    height: 7rem;
+    width: 100%;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row{
+    display: flex;
+}
+
+.description{
+    margin: 0.6rem 0;
+}
+
+.bold{
+    font-weight: 900;
+}
